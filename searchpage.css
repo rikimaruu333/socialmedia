@@ -1,0 +1,229 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+.container {
+    display: flex;
+}
+
+.side-panel, .posts, .friends-list {
+    box-sizing: border-box;
+    height: 650px;
+}
+.side-panel {
+    margin-right: 7px;
+    background-color: rgb(0, 0, 0);
+    width: 19%; /* 20% screen size for the sidebar */
+    padding: 20px;
+    border: none;
+    border-right: 1px solid rgba(164, 164, 164, 0.429);
+}
+
+.logo img {
+    width: 70%;
+    margin: 10px 0 20px 20px;
+}
+
+.navigation li {
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.navigation li:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.navigation li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.navigation li a:hover {
+    color: white;
+}
+
+
+.navigation ul li{
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+}
+.navigation ul li a{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+.navigation ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.navigation ul li a i{
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 10px ;
+}
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 10px ;
+}
+
+
+
+
+
+.posts {
+    width: 70%; /* 50% screen size for the posts */
+    padding: 20px;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.searchbar button{
+    border: 1px solid gray;
+    position: relative;
+    right: 0;
+    background-color: #131124;
+    border-radius: 50%;
+}
+.searchbox{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.searchbar{
+    width: 100%;
+    max-width: 70vh;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    padding: 0 0 0 20px;
+}
+.searchbar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: small;
+    color: black;
+}
+.search-button{
+    cursor: pointer;
+}
+.searchbox img{
+    height: 40px;
+    width: 40px;
+}
+
+.user-box{
+    max-height: 550px;
+    overflow-y: auto;
+}
+.user-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 30px 10px 15px;
+    border: 1px solid rgba(156, 156, 156, 0.658);
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile img {
+    height: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    background-color: rgb(32, 16, 25);
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.user-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(46, 45, 50, 0.807);
+}
+
+.user-type {
+    font-size: small;
+    color: #5a5a68;
+}
+.viewprofilebtn {
+    background-color: #0095f6; /* Instagram blue color */
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px 15px; /* Adjust padding for the follow button */
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin: 5px 10px 0 0; /* Add margin to separate from the suggested text */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.book-button,
+.view-profile-button,
+.message-button{
+    cursor: pointer;
+}
+
+.book-button img,
+.view-profile-button img,
+.message-button img{
+    height: 20px;
+    width: 20px;
+}
+
+.book-button button {
+    background-color: #191cdf;
+}
